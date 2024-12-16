@@ -20,7 +20,7 @@ app.UseHttpsRedirection();
 
 app.MapGet("/api/marine-animals", () =>
     Results.Ok(new List<MarineAnimal>()))
-        .WithName("GetMarineANimals")
+        .WithName("GetMarineAnimals")
         .WithOpenApi();
 
 app.Run();
